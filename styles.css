@@ -1,46 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 160%;
-}
-
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
   width: 60%;
   margin: auto;
 }
 
-article {
-  column-count: 3;
+a,
+a:visited,
+a:hover {
+  color: black;
+  font-weight: 700;
 }
 
-img,
-article > h2:first-child,
-article > p:first-child {
-  column-span: all;
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header p {
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h1 em {
+  font-style: normal;
+  color: #d12020;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+main > div {
+  max-width: 100%;
+}
+
+main > div > * {
+  width: 100%;
+}
+
+main > div > article {
+  width: auto;
+}
+
+aside:nth-child(1) {
+  margin-top: 4rem;
+}
+
+aside:nth-child(1) p {
+  font-size: 1.2rem;
+}
+
+aside:nth-child(2) {
+  margin-top: 5rem;
+}
+
+aside:nth-child(2) h2 {
+  color: #d12020;
+}
+
+aside:nth-child(2) h3 {
   font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
 }
 
-h1,
-strong {
-  color: #ef963e;
-}
-
-h2:first-child {
+article:nth-child(1) h2 {
+  color: #d12020;
   font-size: 2rem;
 }
 
-h2 {
-  font-size: 1rem;
+article:nth-child(2) h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+article:nth-child(2) {
+  margin-top: 4rem;
+}
+
+article:nth-child(2) mark {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+p {
+  line-height: 160%;
 }
